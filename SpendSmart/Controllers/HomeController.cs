@@ -28,7 +28,7 @@ namespace SpendSmart.Controllers
         public IActionResult CreateEditExpenseForm(Expense model)
         {
             //Återvänder till startsidan
-            return RedirectToAction("Index");
+            return RedirectToAction("Expenses");
         }
 
         public IActionResult Privacy()
