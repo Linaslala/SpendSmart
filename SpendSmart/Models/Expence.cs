@@ -1,6 +1,16 @@
-﻿namespace SpendSmart.Models
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
+
+namespace SpendSmart.Models
 {
     public class Expence
     {
+        public int Id { get; set; }
+        public decimal Value { get; set; }
+
+        [Required]
+        public string? Description { get; set; }
+
+
     }
 }
