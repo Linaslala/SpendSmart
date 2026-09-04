@@ -11,8 +11,13 @@
 <form>
     <label>Id</label>
     <input class="form-control" type="number" placeholder="0" asp-for="Id"/>
-    <label>Value</label>
-    <input class="form-control" type="number" placeholder="0" asp-for="Value" />
+    
+    <label>Value $</label>
+    <input class="form-control" type="number" placeholder="0" asp-for="Value" step="0.01"/>
+    
     <label>Description</label>
     <input class="form-control" type="text" placeholder="Description" asp-for="Description" />
+
+    <button class="btn btn-primary mt-4" type="submit">Ok</button>
+
 </form>

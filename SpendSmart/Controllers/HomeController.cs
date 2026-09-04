@@ -1,3 +1,4 @@
+using AspNetCoreGeneratedDocument;
 using Microsoft.AspNetCore.Mvc;
 using SpendSmart.Models;
 using System.Diagnostics;
@@ -20,6 +21,14 @@ namespace SpendSmart.Controllers
         public IActionResult CreateEditExpense()
         {
             return View();
+        }
+
+        //För att formuläret ska skickas någonstans när man trycker på OK
+        //Objekt av typen Expense
+        public IActionResult CreateEditExpenseForm(Expense model)
+        {
+            //Återvänder till startsidan
+            return RedirectToAction("Index");
         }
 
         public IActionResult Privacy()
